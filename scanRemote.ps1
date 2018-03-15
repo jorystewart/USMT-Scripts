@@ -36,6 +36,7 @@ catch {
 #Run the migRecentUsers script, calling ScanState and USMTUtils.
 Write-Host "`nInvoking migration script..."
 try {
+    #Replace MIGRECENTUSERS.PS1_PATH with a path to the location of the migRecentUsers.ps1 script
     Invoke-Command -Session $usmtSession -ScriptBlock { & MIGRECENTUSERS.PS1_PATH }
 }
 catch {
