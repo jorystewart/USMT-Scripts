@@ -36,6 +36,7 @@ catch {
 #Run the loadRecentUsers script, calling LoadState.
 Write-Host "`nInvoking load script..."
 try {
+    #Replace LOADRECENTUSERS.PS1_PATH with the path to the loadRecentUsers.ps1 script
     Invoke-Command -Session $usmtSession -ScriptBlock { & LOADRECENTUSERS.PS1_PATH }
 }
 catch {
