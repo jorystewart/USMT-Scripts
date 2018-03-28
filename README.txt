@@ -1,4 +1,4 @@
-The scripts are completely portable. It does not matter if they reside on the local hard drive, on a removable drive, or on the network.
+The scripts are completely portable. It does not matter if they reside on the local hard drive, on a removable drive, or on the network. Sysinternals psexec.exe is required to remotely enable PowerShell remoting.
 There are two methods: One executes the scripts remotely via a local terminal, and the other requires remoting in the source and destination computers and running the script manually.
 
 Executing remotely:
@@ -24,15 +24,15 @@ Follow the prompts from the script. You will need to enter the name of the sourc
 
 Solution: Open PowerShell as an administrator and type in the following:
 
-Set-ExecutionPolicy –ExecutionPolicy unrestricted –Scope process
+Set-ExecutionPolicy â€“ExecutionPolicy unrestricted â€“Scope process
 
-The above command allows scripts to run, but only in the current shell. If you remove the –Scope flag, scripts will be allowed until you change the execution policy back:
+The above command allows scripts to run, but only in the current shell. If you remove the â€“Scope flag, scripts will be allowed until you change the execution policy back:
 
-Set-ExecutionPolicy –ExecutionPolicy unrestricted
+Set-ExecutionPolicy â€“ExecutionPolicy unrestricted
 
 To disable scripts again:
 
-Set-ExecutionPolicy –ExecutionPolicy Restricted
+Set-ExecutionPolicy â€“ExecutionPolicy Restricted
 
 
 
