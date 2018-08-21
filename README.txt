@@ -1,3 +1,6 @@
+Replace instances of $USMTPATH with the path you wish to use. Requires the USMT files to be present in that location.
+
+
 Run the USMTMenu.ps1 script and follow the prompts.
 
 Troubleshooting:
